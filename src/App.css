@@ -1,0 +1,23 @@
+img {
+    height: 50px;
+    width: 50px;
+}
+
+ul {
+    list-style: none;
+}
+
+.list > li {
+    display: flex;
+    margin: 10px;
+}
+
+.list li p {
+    margin: 0;
+    padding: 0;
+}
+
+.list li p:nth-child(2) {
+    color: rgb(163, 163, 163)
+}
+
