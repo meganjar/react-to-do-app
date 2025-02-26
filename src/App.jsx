@@ -2,15 +2,17 @@ import { useState, useReducer } from 'react'
 import './App.css'
 import ListItem from './ListItem.jsx'
 
-function reducer(state, action) {
+const [editItem, setItem] = useState(false)
+
+function reducer(state, action, editItem) {
   switch(action.type) {
     case "add":
       return [...state, {
         item: state.payload.name,
         id: state.length + 1
       }]
-    case "sace":
-        return 
+    case "edit":
+        return payload setItem(prevState => !prevState)
     case "delete":
         return (
           state.filter((item) => (item.id !== payload.id))
