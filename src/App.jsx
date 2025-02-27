@@ -12,7 +12,7 @@ function reducer(state, action, editItem) {
         id: state.length + 1
       }]
     case "edit":
-        return payload setItem(prevState => !prevState)
+        return  setItem(prevState => !prevState)
     case "delete":
         return (
           state.filter((item) => (item.id !== payload.id))
